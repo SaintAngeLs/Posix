@@ -1,0 +1,7 @@
+the first program run:
+
+/prog23a_s a 2000 & ./prog23_local a 2 1 + & ./prog23_local a 2 1 '*' & ./prog23_local a 2 0 / & killall -s SIGINT prog23a_s
+
+the secons etap run:
+
+$ ./prog23b_s a 2000 & ./prog23_tcp localhost 2000 234 17  / &./prog23_local a 2 1 '*' & killall -s SIGINT prog23b_s
